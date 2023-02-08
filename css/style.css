@@ -205,6 +205,25 @@ a {
 .frame1 .p2 {
   display: none; }
 
+.btn-primary {
+  justify-content: center;
+  align-items: center;
+  width: 134px;
+  height: 30px;
+  background: #7d3cff;
+  border: none;
+  box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  font-family: "Be Vietnam Pro", sans-serif; }
+
+.card {
+  border: none;
+  border-color: black; }
+
 .list-container-mobile {
   display: none; }
 
@@ -553,10 +572,13 @@ footer p {
   font-size: 12.5px;
   line-height: 18px;
   display: flex;
-  justify-content: flex-end;
   color: #ffffff;
-  margin-right: 10pc;
-  margin-top: -1pc; }
+  margin: 0%;
+  padding: 0%;
+  justify-content: center; }
+
+#Copyright2 {
+  display: none; }
 
 #form {
   width: 201px;
@@ -570,13 +592,16 @@ footer p {
   color: #a0a0a0; }
 
 .form {
-  margin-top: -2pc;
-  margin-left: -10pc; }
+  padding-bottom: 2pc;
+  margin-top: 1pc; }
 
 #boton {
   width: 63px;
   background-color: #ffffff;
   color: #7d3cff; }
+
+.formylogos {
+  width: 270px; }
 
 .footer-images {
   width: 150px;
@@ -592,6 +617,13 @@ footer p {
   height: 19px;
   margin-top: 0%; }
 
+.social-logos-mobile {
+  display: flex;
+  margin: 0%;
+  padding: 0%;
+  width: 100%;
+  justify-content: space-evenly; }
+
 .footer-list {
   height: 200px;
   width: 400px;
@@ -599,9 +631,9 @@ footer p {
   font-size: 16px;
   line-height: 23px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   color: #ffffff;
-  margin-left: -12pc; }
+  margin-left: -2pc; }
 
 .footer-list ul {
   list-style-type: none;
@@ -618,23 +650,22 @@ footer p {
 .frame2 button:hover {
   background: #b8b8b8; }
 
-.footer-list li:hover {
-  color: #b2b7b4;
-  cursor: pointer;
-  transition: color 0.4s ease; }
+.footer-list li a:any-link {
+  color: #ffffff;
+  cursor: pointer; }
+
+.footer-list li a:hover {
+  color: #242e53;
+  cursor: pointer; }
 
 .social-logos:hover {
   cursor: pointer; }
 
-.header-home nav a:hover {
+.navbar-nav li a:hover {
   cursor: pointer;
-  color: #838884;
-  transition: color 0.4s ease; }
+  color: #7d3cff; }
 
 .logo:hover {
-  cursor: pointer; }
-
-.burger:hover {
   cursor: pointer; }
 
 @media (max-width: 1000px) {
@@ -644,8 +675,130 @@ footer p {
     flex-direction: column; }
   .contacto-info {
     margin-bottom: 40px; }
-  .contacto-info, .contacto-form {
-    width: 100%; } }
+  .contacto-info,
+  .contacto-form {
+    width: 100%; }
+  .bigimg-nosotros {
+    height: 80%;
+    align-items: flex-end;
+    margin-top: -20px;
+    padding-right: 2pc; }
+  .top-nosotros div {
+    width: 350px;
+    text-align: left;
+    margin: 0%; }
+  .top-nosotros p {
+    width: 350px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16.5584px;
+    line-height: 120%;
+    color: #242e53; } }
+
+@media (max-width: 800px) {
+  /* footer  */
+  footer {
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+    height: 400px; }
+  .footer-flex {
+    display: inline;
+    height: 100%;
+    margin: 0%; }
+  #form {
+    margin: 0%;
+    padding: 0%;
+    margin-bottom: 0pc; }
+  .form {
+    width: 90%;
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    flex-wrap: nowrap; }
+  .formylogos {
+    width: 100%; }
+  .footer-list {
+    margin: 0%;
+    padding: 0%;
+    margin-bottom: 0pc;
+    width: 90%; }
+  footer p {
+    margin: 0%;
+    padding: 0%;
+    justify-content: center;
+    margin-top: 1.5pc; }
+  #Copyright1 {
+    display: none; }
+  #Copyright2 {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
+    text-align: center;
+    line-height: 28px; }
+  .footer-images {
+    display: none; }
+  .social-logos {
+    display: none; }
+  .social-logos-mobile {
+    display: flex;
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+    justify-content: space-evenly;
+    margin-top: 3pc; }
+  .footer-images .logo {
+    margin: 0%;
+    padding: 0%;
+    margin-left: 10pc;
+    margin-bottom: 3pc;
+    display: none; } }
+
+@media (max-width: 710px) {
+  .top-nosotros {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 9px;
+    height: 100%; }
+  .top-nosotros div {
+    display: inline;
+    width: 351px;
+    text-align: left;
+    justify-content: center;
+    margin: 0%;
+    margin: auto; }
+  .bigimg-nosotros {
+    display: inline-flex;
+    height: 300px;
+    justify-content: right;
+    margin-top: 2px;
+    padding-right: 2pc;
+    margin: auto; }
+  /* frame1  */
+  .frame1 {
+    background-color: #7d3cff;
+    display: inline-block;
+    height: 100%; }
+  .frame1 h2 {
+    width: 400px;
+    margin-left: 1pc;
+    margin-top: 2pc; }
+  .frame1 .p1 {
+    display: none; }
+  .frame1 .p2 {
+    display: block;
+    width: 94%;
+    margin-top: 2pc;
+    margin-left: 1pc;
+    margin-bottom: 40px;
+    text-align: left;
+    line-height: 151.1%; }
+  .team-img {
+    height: 120px; } }
 
 @media (max-width: 480px) {
   body {
@@ -674,24 +827,6 @@ footer p {
   .top button {
     margin-left: 60%;
     margin-top: 1pc; }
-  /* frame1  */
-  .frame1 {
-    background-color: #7d3cff;
-    display: inline-block;
-    height: 300px; }
-  .frame1 h2 {
-    width: 400px;
-    margin-left: 1pc;
-    margin-top: 2pc; }
-  .frame1 .p1 {
-    display: none; }
-  .frame1 .p2 {
-    display: block;
-    width: 440px;
-    margin-top: 2pc;
-    margin-left: 1pc;
-    text-align: left;
-    line-height: 151.1%; }
   .sliderfade2 {
     display: inline-block;
     height: 300px;
@@ -739,49 +874,6 @@ footer p {
     margin-top: 3pc; }
   .frame2 button {
     margin: 6pc; }
-  /* footer  */
-  footer {
-    margin: 0%;
-    padding: 0%;
-    width: 100%;
-    height: 980px; }
-  .footer-flex {
-    display: inline; }
-  #form {
-    display: inline;
-    width: 40%;
-    margin: 0%;
-    padding: 0%;
-    margin-left: 10pc;
-    margin-bottom: 0pc; }
-  .footer-list {
-    margin: 0%;
-    padding: 0%;
-    margin-bottom: 0pc; }
-  footer p {
-    margin: 0%;
-    padding: 0%;
-    justify-content: center;
-    margin-top: pc; }
-  .footer-images {
-    display: inline-block;
-    margin: 0%;
-    padding: 0%;
-    /* padding-left: ; */
-    padding-top: 20pc; }
-  .social-logos {
-    display: flex;
-    margin: 0%;
-    padding: 0%;
-    width: 100%;
-    justify-content: space-evenly;
-    margin-top: -3pc; }
-  .footer-images .logo {
-    margin: 0%;
-    padding: 0%;
-    margin-left: 10pc;
-    margin-bottom: 3pc;
-    display: none; }
   .frame2 button {
     background-color: #232c50;
     color: #ffffff; } }

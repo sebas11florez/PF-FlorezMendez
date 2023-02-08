@@ -56,6 +56,7 @@ a {
   text-decoration: none;
 }
 
+
 .bigimg {
   width: 540px;
   height: 461.07px;
@@ -109,8 +110,6 @@ a {
 
 .bigimg-nosotros {
   height: 95%;
-
-  // height: 380px;
   align-items: flex-end;
   margin-top: -20px;
   padding-right: 2pc;
@@ -237,6 +236,27 @@ a {
 }
 .frame1 .p2 {
   display: none;
+}
+
+.btn-primary {
+  justify-content: center;
+  align-items: center;
+  width: 134px;
+  height: 30px;
+  background: $color-principal;
+  border: none;
+  box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+  color: #ffffff;
+  font-style:normal;
+  font-weight: 600;
+  font-size: 12px;
+  font-family: "Be Vietnam Pro", sans-serif;
+
+}
+.card {
+  border: none;
+  border-color: black;
 }
 .list-container-mobile {
   display: none;
@@ -624,10 +644,13 @@ footer p {
   font-size: 12.5px;
   line-height: 18px;
   display: flex;
-  justify-content: flex-end;
   color: #ffffff;
-  margin-right: 10pc;
-  margin-top: -1pc;
+  margin: 0%;
+  padding: 0%;
+  justify-content: center;
+}
+#Copyright2 {
+  display: none;
 }
 
 #form {
@@ -643,14 +666,18 @@ footer p {
 }
 
 .form {
-  margin-top: -2pc;
-  margin-left: -10pc;
+  padding-bottom: 2pc;
+  margin-top: 1pc;
 }
 
 #boton {
   width: 63px;
   background-color: #ffffff;
   color: $color-principal;
+}
+
+.formylogos {
+  width: 270px;
 }
 
 .footer-images {
@@ -669,6 +696,14 @@ footer p {
   height: 19px;
   margin-top: 0%;
 }
+.social-logos-mobile {
+  display: flex;
+  margin: 0%;
+  padding: 0%;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
 
 .footer-list {
   height: 200px;
@@ -677,9 +712,9 @@ footer p {
   font-size: 16px;
   line-height: 23px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   color: #ffffff;
-  margin-left: -12pc;
+  margin-left: -2pc;
 }
 
 .footer-list ul {
@@ -700,27 +735,25 @@ footer p {
 .frame2 button:hover {
   background: #b8b8b8;
 }
-.footer-list li:hover {
-  color: #b2b7b4;
-  cursor: pointer;
-  transition: color 0.4s ease;
-}
 
+.footer-list li a:any-link {
+  color: #ffffff;
+  cursor: pointer;
+}
+.footer-list li a:hover {
+  color: $color-secundario;
+  cursor: pointer;
+}
 .social-logos:hover {
   cursor: pointer;
 }
 
-.header-home nav a:hover {
+.navbar-nav li a:hover {
   cursor: pointer;
-  color: #838884;
-  transition: color 0.4s ease;
+  color: $color-principal;
 }
 
 .logo:hover {
-  cursor: pointer;
-}
-
-.burger:hover {
   cursor: pointer;
 }
 
