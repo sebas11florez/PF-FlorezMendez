@@ -13,6 +13,27 @@
   .contacto-form {
     width: 100%;
   }
+  .card {
+    margin: 20px 24px;
+  }
+  .cuarta-card {
+    display: flex;
+  }
+
+
+  .list {
+    display: inline;
+    margin: 0pc;
+    margin: auto;
+    list-style: none;
+  }
+
+
+  .list-element {
+    width: 465px;
+    padding-bottom: 30px;
+    padding-top:30px ;
+  }
 
   // ABOUT US
   .bigimg-nosotros {
@@ -34,9 +55,22 @@
     line-height: 120%;
     color: $color-secundario;
   }
+  .frame2 h2 {
+    font-size:36px ;
+  }
+  .frame-products {
+    margin-top: -80px;
+
+  }
+
 }
 
 @media (max-width: 800px) {
+  .frame2 h2 {
+    font-size:34px ;
+    margin: 0%;
+
+  }
   /* footer  */
 
   footer {
@@ -55,16 +89,18 @@
     margin: 0%;
     padding: 0%;
     margin-bottom: 0pc;
+    width: 380px;
   }
 
   .form {
-    width: 90%;
+    width: 100%;
     margin: 0%;
     padding: 0%;
     display: flex;
     justify-content: center;
     justify-items: center;
     flex-wrap: nowrap;
+    margin: auto;
   }
   .formylogos {
     width: 100%;
@@ -143,76 +179,12 @@
     padding-right: 2pc;
     margin: auto;
   }
-  /* frame1  */
-
-  .frame1 {
-    background-color: $color-principal;
-    display: inline-block;
-    height: 100%;
-  }
-  .frame1 h2 {
-    width: 400px;
-    margin-left: 1pc;
-    margin-top: 2pc;
-  }
-  .frame1 .p1 {
-    display: none;
-  }
-  .frame1 .p2 {
-    display: block;
-    width: 94%;
-    margin-top: 2pc;
-    margin-left: 1pc;
-    margin-bottom: 40px;
-    text-align: left;
-    line-height: 151.1%;
-  }
-  .team-img {
-    height: 120px;
-  }
-}
-
-@media (max-width: 480px) {
-  body {
-    width: 100%;
-  }
-  /* HEADER  */
-  .header-home {
-    justify-content: space-between;
-  }
-
-  header .boton {
-    display: none;
-  }
-
-  /* top  */
-  .top {
-    display: inline;
-  }
   .sliderfade {
     display: none;
   }
-  .bigimg {
-    width: 90%;
-    height: 341.53px;
-    margin: 5%;
-    margin-bottom: 4pc;
-  }
-  .top div {
-    margin: 5%;
-    width: 400px;
-  }
-  .top p {
-    margin-top: 3pc;
-    width: 400px;
-  }
-  .top button {
-    margin-left: 60%;
-    margin-top: 1pc;
-  }
 
-  
   .sliderfade2 {
+    margin-top: 70px;
     display: inline-block;
     height: 300px;
     width: 99%;
@@ -248,6 +220,194 @@
     }
   }
 
+  /* frame1  */
+
+  .frame1 {
+    background-color: $color-principal;
+    display: inline-block;
+    height: 100%;
+  }
+  .frame1 h2 {
+    width: 400px;
+    margin-left: 1pc;
+    margin-top: 2pc;
+  }
+  .frame1 .p1 {
+    display: none;
+  }
+  .frame1 .p2 {
+    display: block;
+    width: 94%;
+    margin-top: 2pc;
+    margin-left: 1pc;
+    margin-bottom: 40px;
+    text-align: left;
+    line-height: 151.1%;
+  }
+  .team-img {
+    height: 120px;
+  }
+  .cuarta-card {
+    display: none;
+  }
+  .tercera-card {
+    display: none;
+  }
+
+  .bullet {
+    display: none;
+  }
+  .list-description {
+    width: 98%;
+    margin:0%;
+  }
+  .list-element {
+    width: 450px;
+    margin:0%;
+  }
+  .frame2 {
+    display: none;
+  }
+  .frame-products {
+    display: inline-block;
+    margin: 0%;
+    margin-top: -150px;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+
+  }
+
+  .frame-products h2 {
+    margin: 0%;
+    margin: auto;
+    width: 95%;
+  }
+
+  .frame-products button {
+    display: none;
+
+  }
+
+}
+
+@media (max-width: 480px) {
+  body {
+    width: 100%;
+  }
+  /* HEADER  */
+  .header-home {
+    justify-content: space-between;
+  }
+
+  header .boton {
+    display: none;
+  }
+
+  /* top  */
+  .top {
+    display: inline;
+  }
+
+  .top div {
+    width: 280px;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 40px;
+
+  }
+
+  .top h1 {
+    width: 100%;
+    font-size: 45px;
+    line-height: 114.6%;
+    margin: 0%;
+    margin: auto;
+  }
+  .top button {
+    margin: 0%;
+    margin: auto;
+    width: 90px;
+    font-size: 12px;
+    height: 35px;
+    margin-top: 1pc;
+
+  }
+  .bannermobile {
+    display: inline;
+  }
+  .bannerpc {
+    display: none;
+  }
+
+  .frame1 h2 {
+    width: 80%;
+    margin-left: 1pc;
+    margin-top: 2pc;
+    font-size: 30px;
+
+  }
+  .sliderfade-service {
+    display: none;
+  }
+  .sliderfade2-service {
+    margin-top: 70px;
+    display: inline-block;
+    height: 300px;
+    width: 99%;
+    background-image: url(../img/phonebroken.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 1s;
+
+    animation-name: animate-service;
+    animation-direction: alternate-reverse;
+    animation-play-state: running;
+    animation-timing-function: ease;
+    animation-duration: 15s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+  }
+  @keyframes animate-service {
+    0% {
+      background-image: url(../img/phonebroken.jpg);
+    }
+    25% {
+      background-image: url(../img/phonefixed.jpg);
+    }
+    50% {
+      background-image: url(../img/phonebroken.jpg);
+    }
+    75% {
+      background-image: url(../img/phonefixed.jpg);
+    }
+    100% {
+      background-image: url(../img/phonebroken.jpg);
+    }
+  }
+
+  .team-img {
+    height: 90px;
+  }
+  .top-nosotros div {
+    width: 90%;
+  }
+  .bigimg-nosotros {
+    padding-right: 0pc;
+  }
+  .top-nosotros p {
+    width: 98%;
+  }
+  .team-description p {
+    margin: 0 2px;
+  }
+#zflip-mobile {
+  display: inline;
+  width: 100%;
+  margin-bottom: -20px;
+
+}
   .list-container-mobile {
     display: inline;
   }
@@ -255,82 +415,36 @@
   .list-container {
     display: none;
   }
-
-  // .list {
-  //   list-style: none;
-  //   margin: 0%;
-  //   width: 408px;
-  // }
-
-  // .list-element {
-  //   width: 530px;
-  //   width: 408px;
-  // }
-
-  // .bullet {
-  //   background-color: $color-principal;
-  //   color: #ffffff;
-  //   display: flex;
-  //   align-items: center;
-  //   justify-content: center;
-  //   border-radius: 30px;
-  //   width: 69px;
-  //   height: 43px;
-  //   margin: 0%;
-  //   margin-top: 3pc;
-  // }
-  // .list-title-div {
-  //   background: rgba(139, 72, 191, 0.3);
-  //   margin-top: -2.7pc;
-  //   margin-left: 10%;
-  //   width: 97.5%;
-  //   height: 42.99px;
-  //   margin-right: 0%;
-  // }
-
-  // .list-title {
-  //   width: 300px;
-  //   margin-left: 10%;
-  //   padding-top: 0.6pc;
-  // }
-
-  // .list-description {
-  //   margin-top: 4pc;
-  //   width: 408px;
-  // }
   .iphone,
   .xiaomi {
     display: none;
   }
 
-  .frame2 {
-    // background-color: #242e52;
-    // display: inline-block;
-    // height: 366px;
-    // justify-content: center;
-    // text-align: center;
-    // flex: none;
-    // margin: 0%;
-    // padding: 0%;
-    display: none;
-  }
-  .h2-desktop {
-    display: none;
-  }
-  .h2-mobile {
-    display: block;
-    height: 192px;
-    width: 324px;
-    text-align: center;
-    padding-left: 6pc;
-    margin-top: 3pc;
-  }
-  .frame2 button {
-    margin: 6pc;
+  // .h2-desktop {
+  //   display: none;
+  // }
+  // .h2-mobile {
+  //   display: block;
+  //   height: 192px;
+  //   width: 324px;
+  //   text-align: center;
+  //   padding-left: 6pc;
+  //   margin-top: 3pc;
+  // }
+  .frame-products h2 {
+    margin: 0%;
+    margin: auto;
+    font-size: 29px;
+    margin: 0%;
+
   }
 
-  .frame2 button {
-    background-color: #232c50;
-    color: #ffffff;
+  #form {
+    width: 230px;
+  }
+}
+@media (min-width: 1599px) {
+  .card-container {
+    flex-wrap: nowrap;
   }
 }

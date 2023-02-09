@@ -39,7 +39,7 @@ body {
   font-weight: 500;
   font-size: 13px;
   line-height: 19px;
-  color: #242e52;
+  color: $color-secundario;
 }
 
 .navbar-toggler:not(.collapsed) {
@@ -47,10 +47,12 @@ body {
   background-color: $color-principal;
 }
 
+
 .navbar-toggler {
   color: $color-principal;
   background-color: $color-principal;
 }
+
 
 a {
   text-decoration: none;
@@ -66,46 +68,37 @@ a {
 
 .top div {
   justify-content: flex-end;
-  width: 450px;
+  width: 299px;
   text-align: right;
   margin-right: 30px;
+  margin-top: 20px;
 }
 
 .top h1 {
-  height: 228px;
   font-style: normal;
   font-weight: 700;
   font-size: 50px;
   line-height: 114.6%;
-  display: flex;
   align-items: center;
   text-align: right;
   letter-spacing: -0.035em;
-  color: #232c50;
+  color: $color-secundario;
+}
+.top h1 span {
+  color: $color-principal;
 }
 
-.top p {
-  width: 450px;
-  height: 71px;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16.5584px;
-  line-height: 157.1%;
-  /* display: flex; */
-  /* align-items: center; */
-  /* text-align: right; */
-  color: #000000;
-}
 
 .top {
   display: flex;
   justify-content: center;
-  margin-top: 90px;
-  height: 400px;
+  margin-top: 60px;
+  height: 300px;
 }
 
 .top button {
-  margin-left: 70%;
+  margin-left: 30%;
+  margin-top: 1pc;
 }
 
 .bigimg-nosotros {
@@ -142,7 +135,6 @@ a {
 
 .top-nosotros p {
   width: 450px;
-  // height: 171px;
   font-style: normal;
   font-weight: 500;
   font-size: 16.5584px;
@@ -158,7 +150,7 @@ a {
 }
 
 .sliderfade {
-  height: 90%;
+  height: 100%;
   width: 50%;
   background-image: url(../img/topimg.png);
   background-size: contain;
@@ -193,6 +185,46 @@ a {
 }
 
 .sliderfade2 {
+  display: none;
+}
+.sliderfade-service {
+  height: 100%;
+  width: 50%;
+  background-image: url(../img/phonebroken.jpg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: 1s;
+
+  animation-name: animate-service;
+  animation-direction: alternate-reverse;
+  animation-play-state: running;
+  animation-timing-function: ease;
+  animation-duration: 15s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+}
+@keyframes animate-service {
+  0% {
+    background-image: url(../img/phonebroken.jpg);
+  }
+  25% {
+    background-image: url(../img/phonefixed.jpg);
+  }
+  50% {
+    background-image: url(../img/phonebroken.jpg);
+  }
+  75% {
+    background-image: url(../img/phonefixed.jpg);
+  }
+  100% {
+    background-image: url(../img/phonebroken.jpg);
+  }
+}
+.sliderfade2-service {
+  display: none;
+}
+.bannermobile {
   display: none;
 }
 .frame1 {
@@ -256,7 +288,20 @@ a {
 }
 .card {
   border: none;
-  border-color: black;
+  transition: 0.5s;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  z-index:2 ;
+  cursor: pointer;
+}
+.card-title {
+  font-size:15px ;
+}
+
+#zflip-mobile {
+  display: none;
 }
 .list-container-mobile {
   display: none;
@@ -278,7 +323,7 @@ a {
 .list-container {
   background-color: #fafafa;
   width: 100%;
-  height: 660px;
+  height: 100%;
   display: flex;
   padding: auto;
 }
@@ -304,11 +349,9 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* padding: 10px 25px; */
   border-radius: 30px;
   width: 69px;
   height: 43px;
-  /* position: absolute; */
   margin-bottom: -2pc;
   margin-left: -6pc;
 }
@@ -418,6 +461,18 @@ a {
 .team-img {
   height: 150px;
 }
+.reparos {
+  border-radius: 30px;
+}
+.reparos-box {
+  transition: 0.5s;
+}
+.reparos-box:hover {
+  transform: scale(1.2);
+  z-index:2 ;
+  cursor: pointer;
+}
+
 
 .team-description {
   margin-top: 2pc;
@@ -432,20 +487,16 @@ a {
   font-weight: 700;
   font-size: 16.0714px;
   margin-top: 12px;
-  // line-height: 156.6%;
   align-items: center;
   letter-spacing: -0.01em;
   color: #3f4868;
 }
 
 .team-description p {
-  // margin: 1pc;
-  /* width: 403px; */
-  // height: 100px;
+
   font-weight: 500;
   font-size: 16px;
-  // line-height: 156.6%;
-  /* margin-left: ; */
+
   display: flex;
   text-align: center;
   margin: 0 16px;
@@ -456,7 +507,7 @@ a {
   color: #ffffff;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   padding: 40px 0px;
   width: 100%;
@@ -475,7 +526,9 @@ a {
   line-height: 114.6%;
   align-items: center;
   color: #ffffff;
-  margin-left: -5pc;
+
+  margin: 0%;
+
 }
 .h2-mobile {
   display: none;
@@ -493,6 +546,10 @@ a {
 .card {
   border-radius: 20px;
   margin: 3pc 1pc;
+}
+
+.cuarta-card {
+  display: none;
 }
 
 .contacto {
